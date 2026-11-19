@@ -1,12 +1,15 @@
- % settings
+% settings
 \documentclass[12pt,a4paper]{article}
 \usepackage[english]{babel} % using english rules set
 \usepackage{newtxtext,newtxmath} % Times type font
 \usepackage[margin=2.5cm]{geometry} % sets margins up
 \usepackage{graphicx} % for pictures purposes
-\usepackage{hyperref} % clickable links, always last
+\usepackage{csquotes} % guillemets, dep of biblatex
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib}
+\usepackage[hidelinks]{hyperref} % clickable links, always last
 
-\title{Italy, one of EU's biggest industrial country.}
+\title{Italy, one of the EU's biggest industrial countries}
 \author{Joss Ablin}
 \date{\today}
 
@@ -19,5 +22,7 @@
 \input{sections/introduction}
 
 \input{sections/country-present}
+
+\printbibliography
 
 \end{document}
